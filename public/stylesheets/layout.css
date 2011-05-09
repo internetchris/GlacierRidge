@@ -1,0 +1,36 @@
+#main {width:980px; margin:0 auto;}
+
+#header {height:495px; background:url(/images/header-bg.jpg) no-repeat left top; overflow:hidden;}
+#header, #content, #footer { font-size:0.75em;}
+#header .col-1 { width:310px;}
+#header .col-2 { width:600px;}
+
+.col-1, .col-2, .col-3 { float:left;}
+
+/*======= index.html =======*/
+#page1 #content .col-1 {width:261px; margin-right:18px;}
+#page1 #content .col-2 { width:599px;}
+
+/*======= index-1.html =======*/
+#page2 #content .col-1 {width:261px; margin-right:18px;}
+#page2 #content .col-2 { width:599px;}
+#page2 #content .col-2 .col-1 { width:236px; margin-right:44px;}
+#page2 #content .col-2 .col-2 { width:238px;}
+
+/*======= index-2.html =======*/
+#page3 #content .col-1 {width:261px; margin-right:18px;}
+#page3 #content .col-2 { width:599px;}
+
+/*======= index-3.html =======*/
+#page4 #content .col-1 {width:261px; margin-right:18px;}
+#page4 #content .col-2 { width:599px;}
+
+/*======= index-4.html =======*/
+#page5 #content .col-1 {width:261px; margin-right:18px;}
+#page5 #content .col-2 { width:599px;}
+
+
+/*=========================*/
+
+
+#footer {height:115px; background:url(/images/footer-bg.jpg) no-repeat left top;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glacier Ridge Suites</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults, 'jquery.nivo.slider.pack', 'script' %>
+  <%= csrf_meta_tag %>
+</head>
+<body id="page1">
+	<div class="tail-top">
+      <div class="tail-bottom">
+         <div id="main">
+            <!-- header -->
+            <div id="header">
+               <div class="row-1">
+                  <div class="logo"><a href="/"><img alt="" src="/images/logo.png" /></a></div>
+                
+                  <ul class="nav">
+                     <li><a href="/" class="current first">Home</a></li>
+                     <li><a href="/suites">Suites</a></li>
+                     <li><a href="/area">Area</a></li>
+                     <li><a href="/services">Services</a></li>
+                     <li><a href="/real-estate">Real Estate</a></li>
+                  </ul>
+               </div>
+             
+               <div class="row-2">
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+               	<div class="wrapper">
+                  	<div class="col-1">
+                     	<!-- box1 begin -->
+                        <div class="box1">
+                        	<div class="inner">
+                           	<h4>Booking</h4>
+                              <form action="" id="booking-form">
+                              	<div>
+                                 	<label><input type="text" value="Your name:"/></label>
+                                    <label><input type="text" value="Your e-mail:"/></label>
+                                    <label><input type="text" value="Your address:"/></label>
+                                    <label class="alt">
+                                    	Num of adults: &nbsp; &nbsp; &nbsp; Num of children:<br />
+                                       <select><option>1</option></select>&nbsp; <select><option></option></select>
+                                    </label>
+                                    <label class="alt">
+                                    	Arrival date:<br />
+                                       <select class="select1"><option>1</option></select><select class="select1"><option>1</option></select><select class="select2"><option>2009</option></select>
+                                    </label>
+                                    <div class="wrapper"><a href="#" class="button">submit</a><a href="#" class="button">Reset</a></div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <!-- box1 end -->
+                     </div>
+                     <div class="col-2">
+                     	<!-- slide-box begin -->
+                        
+                        	<div class="inner1">
+                        	  <div id="slider">
+                            	<img src="images/slide1.png" alt="" />
+                            	<img src="images/slide2.png" alt="" />
+                            	<img src="images/slide3.png" alt=""  />
+                            	<img src="images/slide4.png" alt="" />	
+                           </div>
+                        </div>
+                        <!-- slide-box end -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- content -->
+            <div id="content">
+               <%= yield %>
+            </div>
+            <!-- footer -->
+            <div id="footer">
+            	<p>Glacier Ridge Suites &copy; 2009 | <a href="index-5.html">Privacy Policy</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
