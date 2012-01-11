@@ -9,6 +9,7 @@ Glacierridge::Application.routes.draw do
      match 'contacts' => 'main#contacts'
      match 'privacy' => 'main#privacy'
      match 'real-estate' => 'main#real-estate'
+     match 'send_booking_request' => 'main#send_booking_request'
      
   # Keep in mind you can assign values other than :controller and :action
 

@@ -23,34 +23,42 @@
                      <li><a href="/real-estate">Real Estate</a></li>
                   </ul>
                </div>
-             
                <div class="row-2">
                    <br/>
                    <br/>
                    <br/>
-                   <br/>
+
                	<div class="wrapper">
+               	  <% if notice %>
+               	  <script type="text/javascript">
+                  $(document).click(function() {
+                      $("#notice").hide("slow");
+                  });
+                  </script>
+               	         <p id="notice"><%= notice %></p>
+               	  <% end %>
                   	<div class="col-1">
                      	<!-- box1 begin -->
                         <div class="box1">
                         	<div class="inner">
                            	<h4>Booking</h4>
-                              <form action="" id="booking-form">
+                           	<%= form_for :booking_request , :url => send_booking_request_path, :html => {:id => 'booking-form'} do |f| %>
                               	<div>
-                                 	<label><input type="text" value="Your name:"/></label>
-                                    <label><input type="text" value="Your e-mail:"/></label>
-                                    <label><input type="text" value="Your address:"/></label>
+                                 	<label style="margin-top: -5px"><%= f.text_field :name, :value => "Your name:", :onclick => "this.value='';" %></label>
+                                    <label style="margin-top: -5px"><%= f.text_field :email, :value => "Your e-mail:", :onclick => "this.value='';" %></label>
+                                    <label style="margin-top: -5px"><%= f.text_field :phone, :value => "Your phone:", :onclick => "this.value='';" %></label>
+                                    <label style="margin-top: -5px"><%= f.text_field :address, :value => "Your address:", :onclick => "this.value='';" %></label>
                                     <label class="alt">
                                     	Num of adults: &nbsp; &nbsp; &nbsp; Num of children:<br />
-                                       <select><option>1</option></select>&nbsp; <select><option></option></select>
+                                       <%= f.select :adults, ['1','2','3','4','5','6'] %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.select :kids, [' ','1','2','3','4','5','6'] %>
                                     </label>
-                                    <label class="alt">
+                                    <label class="alt" style="margin-top:-5px;">
                                     	Arrival date:<br />
-                                       <select class="select1"><option>1</option></select><select class="select1"><option>1</option></select><select class="select2"><option>2009</option></select>
+                                       <%= f.date_select :arrival, :use_short_month => true, :order => [:month, :day, :year]%>
                                     </label>
-                                    <div class="wrapper"><a href="#" class="button">submit</a><a href="#" class="button">Reset</a></div>
+                                    <div class="wrapper"><%= f.submit "Submit Booking", :style => 'background-color:#dadbdb; width: 100px; border: 0; color:#094360; float:right' %></div>
                                  </div>
-                              </form>
+                             <% end %>
                            </div>
                         </div>
                         <!-- box1 end -->
