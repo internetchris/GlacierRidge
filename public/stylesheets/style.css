@@ -71,7 +71,7 @@ ul { list-style:none;}
 /*==================other====================*/
 .img-indent { margin:0 20px 0 0; float:left;}
 .img-box { width:100%; overflow:hidden; padding-bottom:10px;}
-.img-box img { float:left; margin:0 20px 0 0;}
+.img-box img { float:left; margin:0 20px 0 0; width: 226px;}
 
 .extra-wrap { overflow:hidden; }
 
