@@ -161,3 +161,18 @@ h5 span { color:#a5d9f3;}
     padding: 5px 8px
 
 }
+
+.contact_numbers{
+	float: right;
+	background-color: #2e7a9e;
+	margin-right: 55px;
+	padding: 5px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.contact_numbers span{
+	color: #fff;
+}
