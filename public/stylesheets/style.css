@@ -176,3 +176,10 @@ h5 span { color:#a5d9f3;}
 .contact_numbers span{
 	color: #fff;
 }
+
+.service_list{
+	float:left;
+	padding: 10px;
+	margin-left: 10px; 
+
+}
