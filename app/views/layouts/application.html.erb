@@ -48,7 +48,7 @@
                      	<!-- box1 begin -->
                         <div class="box1">
                         	<div class="inner">
-                           	<h4 style="font-size: 16px;">Booking - (406) 752-4333</h4>
+                           	<h4 style="font-size: 16px;">Phone (406) 752-4333</h4>
                            	<%= form_for :booking_request , :url => send_booking_request_path, :html => {:id => 'booking-form'} do |f| %>
                               	<div>
                                  	<label style="margin-top: -5px"><%= f.text_field :name, :value => "Your name:", :onclick => "this.value='';" %></label>
@@ -63,7 +63,7 @@
                                     	Arrival date:<br />
                                        <%= f.date_select :arrival, :use_short_month => true, :order => [:month, :day, :year]%>
                                     </label>
-                                    <div class="wrapper"><%= f.submit "Submit Booking", :style => 'background-color:#dadbdb; width: 100px; border: 0; color:#094360; float:right' %></div>
+                                    <div class="wrapper"><%= f.submit "Request Rates", :style => 'background-color:#dadbdb; width: 100px; border: 0; color:#094360; float:right' %></div>
                                  </div>
                              <% end %>
                            </div>
