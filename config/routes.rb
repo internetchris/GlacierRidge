@@ -6,6 +6,7 @@ Glacierridge::Application.routes.draw do
      match 'suites' => 'main#suites'
      match 'area' => 'main#area'
      match 'services' => 'main#services'
+     match 'rates' => 'main#rates'
      match 'contacts' => 'main#contacts'
      match 'privacy' => 'main#privacy'
      match 'real-estate' => 'main#real-estate'
