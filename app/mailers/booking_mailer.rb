@@ -3,7 +3,7 @@ class BookingMailer < ActionMailer::Base
   
   def booking_email(booking_request)
       @booking_request = booking_request
-      mail(:to => (Rails.env == 'development' ? "internetchris1@gmail.com" : "info@glacierridgesuites.com"), :subject => "[New Booking] - Glacier Ridge Website")
+      mail(:to => (Rails.env == 'development' ? "internetchris1@gmail.com" : ["info@glacierridgesuites.com", "agf@bresnan.net"]), :subject => "[New Booking] - Glacier Ridge Website")
     end
     
   def rate_email(email_to)
